@@ -1,9 +1,9 @@
 <?php
     class Prodotto {
-        protected $nome;
-        protected $tipologia;
-        protected $prezzo;
-        protected $immagine;
+        public $nome;
+        public $tipologia;
+        public $prezzo;
+        public $immagine;
 
 
 

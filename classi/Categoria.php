@@ -1,11 +1,11 @@
 <?php
 
 class Categoria {
-    protected $razza;
-    protected $colore;
-    protected $taglia;
-    protected $icona;
-    protected $immagine;
+    public $razza;
+    public $colore;
+    public $taglia;
+    public $icona;
+    public $immagine;
 
     
     public function __construct($_razza, $_colore, $_taglia, $_icona, $_immagine) {
@@ -21,9 +21,4 @@ class Categoria {
         return $this->icona;
     }
 
-    public function setIcon($icona){
-        $this->icona = $icona;
-
-        return $this;
-    }
 }

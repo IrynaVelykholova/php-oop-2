@@ -1,10 +1,6 @@
 <?php
     require_once __DIR__ . '/db/prodotti.php';
-    require_once __DIR__ . '/classi/Cani.php';
-    require_once __DIR__ . '/classi/Gatti.php';
-    require_once __DIR__ . '/classi/Cibo.php';
-    require_once __DIR__ . '/classi/Gioco.php';
-    require_once __DIR__ . '/classi/Cuccia.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -25,39 +21,58 @@
         <div class="row">
 
         <?php
-        foreach ($cani as $prodotto) { ?>
+        foreach ($cibi as $cibo) { ?>
 
             <div class="col-6">
                 <div class="card">
-                    <img src="<?php echo ($prodotto->getImmagine()) ?>" class="card-img-top">
+                    <img src="<?php echo ($cibo->getImmagine()) ?>" class="card-img-top">
 
                     <div class="card-body">
-                        <h5 class="card-title"><?php echo ($prodotto->getNome()) ?></h5>
-                        <p class="card-text"><?php echo ($prodotto->getTipologia()) ?></p>
-                        <p class="card-text"><?php echo ($prodotto->getPrezzo()) ?></p>
+                        <h5 class="card-title"><?php echo ($cibo->getNome()) ?></h5>
+                        <p class="card-text"><?php echo ($cibo->getTipologia()) ?></p>
+                        <p class="card-text"><?php echo ($cibo->getPrezzo()) ?></p>
                     </div>
                 </div>
             </div>
         <?php
         }
         ?>
-
-
         </div>
 
         <div class="row">
 
             <?php
-            foreach ($gatti as $prodotto) { ?>
+            foreach ($cucce as $cuccia) { ?>
 
                 <div class="col-6">
                     <div class="card">
-                        <img src="<?php echo ($prodotto->getImmagine()) ?>" class="card-img-top">
+                        <img src="<?php echo ($cuccia->getImmagine()) ?>" class="card-img-top">
 
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo ($prodotto->getNome()) ?></h5>
-                            <p class="card-text"><?php echo ($prodotto->getTipologia()) ?></p>
-                            <p class="card-text"><?php echo ($prodotto->getPrezzo()) ?></p>
+                            <h5 class="card-title"><?php echo ($cuccia->getNome()) ?></h5>
+                            <p class="card-text"><?php echo ($cuccia->getTipologia()) ?></p>
+                            <p class="card-text"><?php echo ($cuccia->getPrezzo()) ?></p>
+                        </div>
+                    </div>
+                </div>
+            <?php
+            }
+            ?>
+        </div>
+
+        <div class="row">
+
+            <?php
+            foreach ($giochi as $gioco) { ?>
+
+                <div class="col-6">
+                    <div class="card">
+                        <img src="<?php echo ($gioco->getImmagine()) ?>" class="card-img-top">
+
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo ($gioco->getNome()) ?></h5>
+                            <p class="card-text"><?php echo ($gioco->getTipologia()) ?></p>
+                            <p class="card-text"><?php echo ($gioco->getPrezzo()) ?></p>
                         </div>
                     </div>
                 </div>
