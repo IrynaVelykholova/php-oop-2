@@ -4,12 +4,14 @@
     require_once __DIR__ . '/classi/Cibo.php';
     require_once __DIR__ . '/classi/Gioco.php';
     require_once __DIR__ . '/classi/Cuccia.php';
-    
+    require_once __DIR__ . '/classi/Prodotto.php';
+    require_once __DIR__ . '/classi/Categoria.php';
+
 $cibi = [
-    new Cibo("croccantini", "cani", "5,00€", "https://media.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1662822271/products/pim/7613034147486_ONE-Mini-Dog-Active-Pollo-e-Riso-800g_8383_IT/purina-one-mini-10-kg-active-croccantini-per-cani-con-pollo-e-riso"),
-    new Cibo("cibo umido", "cani", "5,00€", "https://fera24.it/images/thumbnails/560/708/detailed/129/5900951298943F1.jpg"),
-    new Cibo("croccantini", "gatti", "5,00€", "https://media.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1682695180/products/pim/5900951283734_B1_ITA/whiskas-croccantini-per-gatti-adulti-con-tonno"),
-    new Cibo("cibo umido", "gatti", "5,00€", "https://m.media-amazon.com/images/I/716Zb1iNWOL._AC_UF894,1000_QL80_.jpg"),
+    new Cibo("croccantini", "cani", "5,00€", "Piccolo", "https://media.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1662822271/products/pim/7613034147486_ONE-Mini-Dog-Active-Pollo-e-Riso-800g_8383_IT/purina-one-mini-10-kg-active-croccantini-per-cani-con-pollo-e-riso"),
+    new Cibo("cibo umido", "cani", "5,00€", "Grande", "https://fera24.it/images/thumbnails/560/708/detailed/129/5900951298943F1.jpg"),
+    new Cibo("croccantini", "gatti", "5,00€", "Piccolo", "https://media.dm-static.com/images/f_auto,q_auto,c_fit,h_1200,w_1200/v1682695180/products/pim/5900951283734_B1_ITA/whiskas-croccantini-per-gatti-adulti-con-tonno"),
+    new Cibo("cibo umido", "gatti", "5,00€", "Medio", "https://m.media-amazon.com/images/I/716Zb1iNWOL._AC_UF894,1000_QL80_.jpg"),
 ];
 
 $cucce = [

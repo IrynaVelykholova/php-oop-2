@@ -1,24 +1,26 @@
 <?php
 
 class Categoria {
-    public $razza;
-    public $colore;
-    public $taglia;
-    public $icona;
-    public $immagine;
-
-    
-    public function __construct($_razza, $_colore, $_taglia, $_icona, $_immagine) {
-        $this->razza = $_razza;
-        $this->colore = $_colore;
-        $this->taglia = $_taglia;
-        $this->icona = $_icona;
-        $this->immagine = $_immagine;
-    }
+    protected $icona; //estendo a Cani e Gatti e do subito un valore
 
 
-    public function getIcon() {
+    /**
+     * Get the value of icona
+     */ 
+    public function getIcona()
+    {
         return $this->icona;
     }
 
+    /**
+     * Set the value of icona
+     *
+     * @return  self
+     */ 
+    public function setIcona($icona)
+    {
+        $this->icona = $icona;
+
+        return $this;
+    }
 }

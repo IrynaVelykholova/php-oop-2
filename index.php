@@ -1,5 +1,12 @@
 <?php
     require_once __DIR__ . '/db/prodotti.php';
+    require_once __DIR__ . '/classi/Categoria.php';
+    require_once __DIR__ . '/classi/Cani.php';
+    require_once __DIR__ . '/classi/Gatti.php';
+    require_once __DIR__ . '/classi/Prodotto.php';
+    require_once __DIR__ . '/classi/Cibo.php';
+    require_once __DIR__ . '/classi/Gioco.php';
+    require_once __DIR__ . '/classi/Cuccia.php';
 
 ?>
 
@@ -29,7 +36,7 @@
 
                     <div class="card-body">
                         <h5 class="card-title"><?php echo ($cibo->getNome()) ?></h5>
-                        <p class="card-text"><?php echo ($cibo->getTipologia()) ?></p>
+                        <p class="card-text"><?php echo ($cibo->getCategoria()) ?></p>
                         <p class="card-text"><?php echo ($cibo->getPrezzo()) ?></p>
                     </div>
                 </div>
@@ -50,7 +57,7 @@
 
                         <div class="card-body">
                             <h5 class="card-title"><?php echo ($cuccia->getNome()) ?></h5>
-                            <p class="card-text"><?php echo ($cuccia->getTipologia()) ?></p>
+                            <p class="card-text"><?php echo ($cuccia->getCategoria()) ?></p>
                             <p class="card-text"><?php echo ($cuccia->getPrezzo()) ?></p>
                         </div>
                     </div>
@@ -71,7 +78,7 @@
 
                         <div class="card-body">
                             <h5 class="card-title"><?php echo ($gioco->getNome()) ?></h5>
-                            <p class="card-text"><?php echo ($gioco->getTipologia()) ?></p>
+                            <p class="card-text"><?php echo ($gioco->getCategoria()) ?></p>
                             <p class="card-text"><?php echo ($gioco->getPrezzo()) ?></p>
                         </div>
                     </div>
